@@ -4,7 +4,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}| @yield('title')</title>
+    <title>{{ config('app.name', 'Laravel') }} | @yield('title')</title>
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
 
