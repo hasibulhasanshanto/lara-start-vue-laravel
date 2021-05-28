@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-@include('layouts.head')
+@include('backend.layouts.head')
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper" id="app">
-        @include('layouts.navbar')
-        @include('layouts.sidebar')
+        @include('backend.layouts.navbar')
+        @include('backend.layouts.sidebar')
         <div class="content-page">
             <div class="content">
                 <div class="container-fluid">
@@ -14,10 +14,10 @@
                 </div>
             </div>
         </div>
-        @include('layouts.footer')
+        @include('backend.layouts.footer')
     </div>
     <!-- ./wrapper -->
-    @include('layouts.footer-script')
+    @include('backend.layouts.footer-script')
 </body>
 
 </html>
