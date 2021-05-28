@@ -2038,6 +2038,485 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/HomePage.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/HomePage.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  mounted: function mounted() {
+    console.log("Component mounted.");
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/Products.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/Products.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  mounted: function mounted() {
+    console.log("Component mounted.");
+  }
+});
+
+/***/ }),
+
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -2130,21 +2609,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "routes": () => (/* binding */ routes)
 /* harmony export */ });
-/* harmony import */ var _components_backend_Dashboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/backend/Dashboard */ "./resources/js/components/backend/Dashboard.vue");
-/* harmony import */ var _components_backend_Profile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/backend/Profile */ "./resources/js/components/backend/Profile.vue");
-/* harmony import */ var _components_backend_Password__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/backend/Password */ "./resources/js/components/backend/Password.vue");
+/* harmony import */ var _components_front_HomePage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/front/HomePage */ "./resources/js/components/front/HomePage.vue");
+/* harmony import */ var _components_front_Products__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/front/Products */ "./resources/js/components/front/Products.vue");
+/* harmony import */ var _components_backend_Dashboard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/backend/Dashboard */ "./resources/js/components/backend/Dashboard.vue");
+/* harmony import */ var _components_backend_Profile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/backend/Profile */ "./resources/js/components/backend/Profile.vue");
+/* harmony import */ var _components_backend_Password__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/backend/Password */ "./resources/js/components/backend/Password.vue");
 
 
 
-var routes = [{
+
+
+var routes = [//Frontend Routes
+{
+  path: '/',
+  component: _components_front_HomePage__WEBPACK_IMPORTED_MODULE_0__.default
+}, {
+  path: '/products',
+  component: _components_front_Products__WEBPACK_IMPORTED_MODULE_1__.default
+}, {
   path: '/home',
-  component: _components_backend_Dashboard__WEBPACK_IMPORTED_MODULE_0__.default
+  component: _components_backend_Dashboard__WEBPACK_IMPORTED_MODULE_2__.default
 }, {
   path: '/home/profile',
-  component: _components_backend_Profile__WEBPACK_IMPORTED_MODULE_1__.default
+  component: _components_backend_Profile__WEBPACK_IMPORTED_MODULE_3__.default
 }, {
   path: '/home/password',
-  component: _components_backend_Password__WEBPACK_IMPORTED_MODULE_2__.default
+  component: _components_backend_Password__WEBPACK_IMPORTED_MODULE_4__.default
 }];
 
 /***/ }),
@@ -37686,6 +38176,84 @@ component.options.__file = "resources/js/components/backend/Profile.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/front/HomePage.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/components/front/HomePage.vue ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _HomePage_vue_vue_type_template_id_13a02342___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomePage.vue?vue&type=template&id=13a02342& */ "./resources/js/components/front/HomePage.vue?vue&type=template&id=13a02342&");
+/* harmony import */ var _HomePage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomePage.vue?vue&type=script&lang=js& */ "./resources/js/components/front/HomePage.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _HomePage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _HomePage_vue_vue_type_template_id_13a02342___WEBPACK_IMPORTED_MODULE_0__.render,
+  _HomePage_vue_vue_type_template_id_13a02342___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/front/HomePage.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/front/Products.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/components/front/Products.vue ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Products_vue_vue_type_template_id_69f43e96___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Products.vue?vue&type=template&id=69f43e96& */ "./resources/js/components/front/Products.vue?vue&type=template&id=69f43e96&");
+/* harmony import */ var _Products_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Products.vue?vue&type=script&lang=js& */ "./resources/js/components/front/Products.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _Products_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _Products_vue_vue_type_template_id_69f43e96___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Products_vue_vue_type_template_id_69f43e96___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/front/Products.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/backend/Dashboard.vue?vue&type=script&lang=js&":
 /*!********************************************************************************!*\
   !*** ./resources/js/components/backend/Dashboard.vue?vue&type=script&lang=js& ***!
@@ -37731,6 +38299,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Profile_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Profile.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/backend/Profile.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Profile_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
+/***/ "./resources/js/components/front/HomePage.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/front/HomePage.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HomePage.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/HomePage.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
+/***/ "./resources/js/components/front/Products.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/front/Products.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Products_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Products.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/Products.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Products_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -37798,6 +38398,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Profile_vue_vue_type_template_id_ced8c2da___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Profile_vue_vue_type_template_id_ced8c2da___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Profile.vue?vue&type=template&id=ced8c2da& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/backend/Profile.vue?vue&type=template&id=ced8c2da&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/front/HomePage.vue?vue&type=template&id=13a02342&":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/components/front/HomePage.vue?vue&type=template&id=13a02342& ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_template_id_13a02342___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_template_id_13a02342___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_template_id_13a02342___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HomePage.vue?vue&type=template&id=13a02342& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/HomePage.vue?vue&type=template&id=13a02342&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/front/Products.vue?vue&type=template&id=69f43e96&":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/components/front/Products.vue?vue&type=template&id=69f43e96& ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Products_vue_vue_type_template_id_69f43e96___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Products_vue_vue_type_template_id_69f43e96___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Products_vue_vue_type_template_id_69f43e96___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Products.vue?vue&type=template&id=69f43e96& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/Products.vue?vue&type=template&id=69f43e96&");
 
 
 /***/ }),
@@ -38099,6 +38733,788 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("a", { staticClass: "card-link", attrs: { href: "#" } }, [
                   _vm._v("Another link")
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/HomePage.vue?vue&type=template&id=13a02342&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/HomePage.vue?vue&type=template&id=13a02342& ***!
+  \**************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "banner header-text" }, [
+        _c("div", { staticClass: "owl-banner owl-carousel" }, [
+          _c("div", { staticClass: "banner-item-01" }, [
+            _c("div", { staticClass: "text-content" }, [
+              _c("h4", [_vm._v("Best Offer")]),
+              _vm._v(" "),
+              _c("h2", [_vm._v("New Arrivals On Sale")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "banner-item-02" }, [
+            _c("div", { staticClass: "text-content" }, [
+              _c("h4", [_vm._v("Flash Deals")]),
+              _vm._v(" "),
+              _c("h2", [_vm._v("Get your best products")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "banner-item-03" }, [
+            _c("div", { staticClass: "text-content" }, [
+              _c("h4", [_vm._v("Last Minute")]),
+              _vm._v(" "),
+              _c("h2", [_vm._v("Grab last minute deals")])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "latest-products" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("div", { staticClass: "section-heading" }, [
+                _c("h2", [_vm._v("Latest Products")]),
+                _vm._v(" "),
+                _c("a", { attrs: { href: "products.html" } }, [
+                  _vm._v("view all products "),
+                  _c("i", { staticClass: "fa fa-angle-right" })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4" }, [
+              _c("div", { staticClass: "product-item" }, [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: { src: "assets/images/product_01.jpg", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "down-content" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("h4", [_vm._v("Tittle goes here")])
+                  ]),
+                  _vm._v(" "),
+                  _c("h6", [_vm._v("$25.75")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "stars" }, [
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })])
+                  ]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Reviews (24)")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4" }, [
+              _c("div", { staticClass: "product-item" }, [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: { src: "assets/images/product_02.jpg", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "down-content" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("h4", [_vm._v("Tittle goes here")])
+                  ]),
+                  _vm._v(" "),
+                  _c("h6", [_vm._v("$30.25")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "stars" }, [
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })])
+                  ]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Reviews (21)")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4" }, [
+              _c("div", { staticClass: "product-item" }, [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: { src: "assets/images/product_03.jpg", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "down-content" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("h4", [_vm._v("Tittle goes here")])
+                  ]),
+                  _vm._v(" "),
+                  _c("h6", [_vm._v("$20.45")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                Sixteen Clothing is free CSS template provided by TemplateMo.\n              "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "stars" }, [
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })])
+                  ]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Reviews (36)")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4" }, [
+              _c("div", { staticClass: "product-item" }, [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: { src: "assets/images/product_04.jpg", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "down-content" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("h4", [_vm._v("Tittle goes here")])
+                  ]),
+                  _vm._v(" "),
+                  _c("h6", [_vm._v("$15.25")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "stars" }, [
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })])
+                  ]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Reviews (48)")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4" }, [
+              _c("div", { staticClass: "product-item" }, [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: { src: "assets/images/product_05.jpg", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "down-content" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("h4", [_vm._v("Tittle goes here")])
+                  ]),
+                  _vm._v(" "),
+                  _c("h6", [_vm._v("$12.50")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "stars" }, [
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })])
+                  ]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Reviews (16)")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-4" }, [
+              _c("div", { staticClass: "product-item" }, [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: { src: "assets/images/product_06.jpg", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "down-content" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("h4", [_vm._v("Tittle goes here")])
+                  ]),
+                  _vm._v(" "),
+                  _c("h6", [_vm._v("$22.50")]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "stars" }, [
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                    _vm._v(" "),
+                    _c("li", [_c("i", { staticClass: "fa fa-star" })])
+                  ]),
+                  _vm._v(" "),
+                  _c("span", [_vm._v("Reviews (32)")])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "best-features" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("div", { staticClass: "section-heading" }, [
+                _c("h2", [_vm._v("About Sixteen Clothing")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-6" }, [
+              _c("div", { staticClass: "left-content" }, [
+                _c("h4", [_vm._v("Looking for the best products?")]),
+                _vm._v(" "),
+                _c("p", [
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        rel: "nofollow",
+                        href: "https://templatemo.com/tm-546-sixteen-clothing",
+                        target: "_parent"
+                      }
+                    },
+                    [_vm._v("This template")]
+                  ),
+                  _vm._v(
+                    "\n              is free to use for your business websites. However, you have no\n              permission to redistribute the downloadable ZIP file on any\n              template collection website.\n              "
+                  ),
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        rel: "nofollow",
+                        href: "https://templatemo.com/contact"
+                      }
+                    },
+                    [_vm._v("Contact us")]
+                  ),
+                  _vm._v("\n              for more info.\n            ")
+                ]),
+                _vm._v(" "),
+                _c("ul", { staticClass: "featured-list" }, [
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Lorem ipsum dolor sit amet")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Consectetur an adipisicing elit")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("It aquecorporis nulla aspernatur")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Corporis, omnis doloremque")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Non cum id reprehenderit")
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "filled-button",
+                    attrs: { href: "about.html" }
+                  },
+                  [_vm._v("Read More")]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-6" }, [
+              _c("div", { staticClass: "right-image" }, [
+                _c("img", {
+                  attrs: { src: "assets/images/feature-image.jpg", alt: "" }
+                })
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "call-to-action" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("div", { staticClass: "inner-content" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-8" }, [
+                    _c("h4", [
+                      _vm._v("Creative & Unique "),
+                      _c("em", [_vm._v("Sixteen")]),
+                      _vm._v(" Products")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                  Itaque corporis amet elite author nulla.\n                "
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-md-4" }, [
+                    _c(
+                      "a",
+                      { staticClass: "filled-button", attrs: { href: "#" } },
+                      [_vm._v("Purchase Now")]
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/Products.vue?vue&type=template&id=69f43e96&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/Products.vue?vue&type=template&id=69f43e96& ***!
+  \**************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "page-heading products-heading header-text" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("div", { staticClass: "text-content" }, [
+                _c("h4", [_vm._v("new arrivals")]),
+                _vm._v(" "),
+                _c("h2", [_vm._v("sixteen products")])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "products" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("div", { staticClass: "filters" }, [
+                _c("ul", [
+                  _c(
+                    "li",
+                    { staticClass: "active", attrs: { "data-filter": "*" } },
+                    [_vm._v("All Products")]
+                  ),
+                  _vm._v(" "),
+                  _c("li", { attrs: { "data-filter": ".des" } }, [
+                    _vm._v("Featured")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { attrs: { "data-filter": ".dev" } }, [
+                    _vm._v("Flash Deals")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { attrs: { "data-filter": ".gra" } }, [
+                    _vm._v("Last Minute")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("div", { staticClass: "filters-content" }, [
+                _c("div", { staticClass: "row grid" }, [
+                  _c("div", { staticClass: "col-lg-4 col-md-4 all des" }, [
+                    _c("div", { staticClass: "product-item" }, [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("img", {
+                          attrs: {
+                            src: "assets/images/product_01.jpg",
+                            alt: ""
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "down-content" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _c("h4", [_vm._v("Tittle goes here")])
+                        ]),
+                        _vm._v(" "),
+                        _c("h6", [_vm._v("$18.25")]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "\n                      Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                      corporis nulla aspernatur.\n                    "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("ul", { staticClass: "stars" }, [
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })])
+                        ]),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Reviews (12)")])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-lg-4 col-md-4 all dev" }, [
+                    _c("div", { staticClass: "product-item" }, [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("img", {
+                          attrs: {
+                            src: "assets/images/product_02.jpg",
+                            alt: ""
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "down-content" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _c("h4", [_vm._v("Tittle goes here")])
+                        ]),
+                        _vm._v(" "),
+                        _c("h6", [_vm._v("$16.75")]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "\n                      Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                      corporis nulla aspernatur.\n                    "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("ul", { staticClass: "stars" }, [
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })])
+                        ]),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Reviews (24)")])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-lg-4 col-md-4 all gra" }, [
+                    _c("div", { staticClass: "product-item" }, [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("img", {
+                          attrs: {
+                            src: "assets/images/product_03.jpg",
+                            alt: ""
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "down-content" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _c("h4", [_vm._v("Tittle goes here")])
+                        ]),
+                        _vm._v(" "),
+                        _c("h6", [_vm._v("$32.50")]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "\n                      Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                      corporis nulla aspernatur.\n                    "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("ul", { staticClass: "stars" }, [
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })])
+                        ]),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Reviews (36)")])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-lg-4 col-md-4 all gra" }, [
+                    _c("div", { staticClass: "product-item" }, [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("img", {
+                          attrs: {
+                            src: "assets/images/product_04.jpg",
+                            alt: ""
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "down-content" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _c("h4", [_vm._v("Tittle goes here")])
+                        ]),
+                        _vm._v(" "),
+                        _c("h6", [_vm._v("$24.60")]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "\n                      Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                      corporis nulla aspernatur.\n                    "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("ul", { staticClass: "stars" }, [
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })])
+                        ]),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Reviews (48)")])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-lg-4 col-md-4 all dev" }, [
+                    _c("div", { staticClass: "product-item" }, [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("img", {
+                          attrs: {
+                            src: "assets/images/product_05.jpg",
+                            alt: ""
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "down-content" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _c("h4", [_vm._v("Tittle goes here")])
+                        ]),
+                        _vm._v(" "),
+                        _c("h6", [_vm._v("$18.75")]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "\n                      Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                      corporis nulla aspernatur.\n                    "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("ul", { staticClass: "stars" }, [
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })])
+                        ]),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Reviews (60)")])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-lg-4 col-md-4 all des" }, [
+                    _c("div", { staticClass: "product-item" }, [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _c("img", {
+                          attrs: {
+                            src: "assets/images/product_06.jpg",
+                            alt: ""
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "down-content" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _c("h4", [_vm._v("Tittle goes here")])
+                        ]),
+                        _vm._v(" "),
+                        _c("h6", [_vm._v("$12.50")]),
+                        _vm._v(" "),
+                        _c("p", [
+                          _vm._v(
+                            "\n                      Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                      corporis nulla aspernatur.\n                    "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("ul", { staticClass: "stars" }, [
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+                          _vm._v(" "),
+                          _c("li", [_c("i", { staticClass: "fa fa-star" })])
+                        ]),
+                        _vm._v(" "),
+                        _c("span", [_vm._v("Reviews (72)")])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-12" }, [
+              _c("ul", { staticClass: "pages" }, [
+                _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("1")])]),
+                _vm._v(" "),
+                _c("li", { staticClass: "active" }, [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("2")])
+                ]),
+                _vm._v(" "),
+                _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("3")])]),
+                _vm._v(" "),
+                _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("4")])]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fa fa-angle-double-right" })
+                  ])
                 ])
               ])
             ])

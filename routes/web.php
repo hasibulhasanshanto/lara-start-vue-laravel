@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\FrontController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +15,13 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return view('front');
-});
+Route::get('/', [FrontController::class, 'front'])->name('front.home');
+Route::get('/products', [FrontController::class, 'front']);
 
 Auth::routes();
 
-Route::prefix('home')->middleware(['auth'])->group(function () {
-    Route::get('/', [HomeController::class, 'index'])->name('home');
-    Route::get('/profile', [HomeController::class, 'index']);
-    Route::get('/password', [HomeController::class, 'index']);
+Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/home/profile', [HomeController::class, 'index']);
+    Route::get('/home/password', [HomeController::class, 'index']);
 });
