@@ -2946,6 +2946,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {//
   }
@@ -2964,6 +2977,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
 //
 //
 //
@@ -3182,12 +3197,16 @@ vue__WEBPACK_IMPORTED_MODULE_1__.default.use(vue_router__WEBPACK_IMPORTED_MODULE
 vue__WEBPACK_IMPORTED_MODULE_1__.default.component('master-component', __webpack_require__(/*! ./components/Master.vue */ "./resources/js/components/Master.vue").default);
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_2__.default({
   routes: _routes__WEBPACK_IMPORTED_MODULE_0__.routes,
-  mode: 'history'
+  mode: 'history',
+  scrollBehavior: function scrollBehavior() {
+    return {
+      x: 0,
+      y: 0
+    };
+  }
 });
 /**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
+ * Mounted with id app
  */
 
 var app = new vue__WEBPACK_IMPORTED_MODULE_1__.default({
@@ -3258,9 +3277,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_front_Products__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/front/Products */ "./resources/js/components/front/Products.vue");
 /* harmony import */ var _components_front_About__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/front/About */ "./resources/js/components/front/About.vue");
 /* harmony import */ var _components_front_ContactUs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/front/ContactUs */ "./resources/js/components/front/ContactUs.vue");
-/* harmony import */ var _components_backend_Dashboard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/backend/Dashboard */ "./resources/js/components/backend/Dashboard.vue");
-/* harmony import */ var _components_backend_Profile__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/backend/Profile */ "./resources/js/components/backend/Profile.vue");
-/* harmony import */ var _components_backend_Password__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/backend/Password */ "./resources/js/components/backend/Password.vue");
+/* harmony import */ var _components_front_PageNotFound_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/front/PageNotFound.vue */ "./resources/js/components/front/PageNotFound.vue");
+/* harmony import */ var _components_backend_Dashboard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/backend/Dashboard */ "./resources/js/components/backend/Dashboard.vue");
+/* harmony import */ var _components_backend_Profile__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/backend/Profile */ "./resources/js/components/backend/Profile.vue");
+/* harmony import */ var _components_backend_Password__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/backend/Password */ "./resources/js/components/backend/Password.vue");
+
 
 
 
@@ -3284,13 +3305,17 @@ var routes = [//Frontend Routes
 }, //Backend Routes
 {
   path: '/home',
-  component: _components_backend_Dashboard__WEBPACK_IMPORTED_MODULE_4__.default
+  component: _components_backend_Dashboard__WEBPACK_IMPORTED_MODULE_5__.default
 }, {
-  path: '/home/profile',
-  component: _components_backend_Profile__WEBPACK_IMPORTED_MODULE_5__.default
+  path: '/profile',
+  component: _components_backend_Profile__WEBPACK_IMPORTED_MODULE_6__.default
 }, {
-  path: '/home/password',
-  component: _components_backend_Password__WEBPACK_IMPORTED_MODULE_6__.default
+  path: '/password',
+  component: _components_backend_Password__WEBPACK_IMPORTED_MODULE_7__.default
+}, //404 Error
+{
+  path: '*',
+  component: _components_front_PageNotFound_vue__WEBPACK_IMPORTED_MODULE_4__.default
 }];
 
 /***/ }),
@@ -38949,6 +38974,43 @@ component.options.__file = "resources/js/components/front/HomePage.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/front/PageNotFound.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/front/PageNotFound.vue ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _PageNotFound_vue_vue_type_template_id_35e6a422___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PageNotFound.vue?vue&type=template&id=35e6a422& */ "./resources/js/components/front/PageNotFound.vue?vue&type=template&id=35e6a422&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__.default)(
+  script,
+  _PageNotFound_vue_vue_type_template_id_35e6a422___WEBPACK_IMPORTED_MODULE_0__.render,
+  _PageNotFound_vue_vue_type_template_id_35e6a422___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/front/PageNotFound.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/front/Products.vue":
 /*!****************************************************!*\
   !*** ./resources/js/components/front/Products.vue ***!
@@ -39215,6 +39277,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_template_id_13a02342___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_template_id_13a02342___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HomePage.vue?vue&type=template&id=13a02342& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/HomePage.vue?vue&type=template&id=13a02342&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/front/PageNotFound.vue?vue&type=template&id=35e6a422&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/front/PageNotFound.vue?vue&type=template&id=35e6a422& ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PageNotFound_vue_vue_type_template_id_35e6a422___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PageNotFound_vue_vue_type_template_id_35e6a422___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PageNotFound_vue_vue_type_template_id_35e6a422___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PageNotFound.vue?vue&type=template&id=35e6a422& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/PageNotFound.vue?vue&type=template&id=35e6a422&");
 
 
 /***/ }),
@@ -39598,7 +39677,10 @@ var staticRenderFns = [
             _c("div", { staticClass: "col-md-6" }, [
               _c("div", { staticClass: "right-image" }, [
                 _c("img", {
-                  attrs: { src: "assets/images/feature-image.jpg", alt: "" }
+                  attrs: {
+                    src: "/frontend/assets/images/feature-image.jpg",
+                    alt: ""
+                  }
                 })
               ])
             ]),
@@ -39662,7 +39744,10 @@ var staticRenderFns = [
               _c("div", { staticClass: "team-member" }, [
                 _c("div", { staticClass: "thumb-container" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/team_01.jpg", alt: "" }
+                    attrs: {
+                      src: "/frontend/assets/images/team_01.jpg",
+                      alt: ""
+                    }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "hover-effect" }, [
@@ -39714,7 +39799,10 @@ var staticRenderFns = [
               _c("div", { staticClass: "team-member" }, [
                 _c("div", { staticClass: "thumb-container" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/team_02.jpg", alt: "" }
+                    attrs: {
+                      src: "/frontend/assets/images/team_02.jpg",
+                      alt: ""
+                    }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "hover-effect" }, [
@@ -39766,7 +39854,10 @@ var staticRenderFns = [
               _c("div", { staticClass: "team-member" }, [
                 _c("div", { staticClass: "thumb-container" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/team_03.jpg", alt: "" }
+                    attrs: {
+                      src: "/frontend/assets/images/team_03.jpg",
+                      alt: ""
+                    }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "hover-effect" }, [
@@ -39818,7 +39909,10 @@ var staticRenderFns = [
               _c("div", { staticClass: "team-member" }, [
                 _c("div", { staticClass: "thumb-container" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/team_04.jpg", alt: "" }
+                    attrs: {
+                      src: "/frontend/assets/images/team_04.jpg",
+                      alt: ""
+                    }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "hover-effect" }, [
@@ -39870,7 +39964,10 @@ var staticRenderFns = [
               _c("div", { staticClass: "team-member" }, [
                 _c("div", { staticClass: "thumb-container" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/team_05.jpg", alt: "" }
+                    attrs: {
+                      src: "/frontend/assets/images/team_05.jpg",
+                      alt: ""
+                    }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "hover-effect" }, [
@@ -39922,7 +40019,10 @@ var staticRenderFns = [
               _c("div", { staticClass: "team-member" }, [
                 _c("div", { staticClass: "thumb-container" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/team_06.jpg", alt: "" }
+                    attrs: {
+                      src: "/frontend/assets/images/team_06.jpg",
+                      alt: ""
+                    }
                   }),
                   _vm._v(" "),
                   _c("div", { staticClass: "hover-effect" }, [
@@ -40064,37 +40164,55 @@ var staticRenderFns = [
               _c("div", { staticClass: "owl-clients owl-carousel" }, [
                 _c("div", { staticClass: "client-item" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/client-01.png", alt: "1" }
+                    attrs: {
+                      src: "/frontend/assets/images/client-01.png",
+                      alt: "1"
+                    }
                   })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "client-item" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/client-01.png", alt: "2" }
+                    attrs: {
+                      src: "/frontend/assets/images/client-01.png",
+                      alt: "2"
+                    }
                   })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "client-item" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/client-01.png", alt: "3" }
+                    attrs: {
+                      src: "/frontend/assets/images/client-01.png",
+                      alt: "3"
+                    }
                   })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "client-item" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/client-01.png", alt: "4" }
+                    attrs: {
+                      src: "/frontend/assets/images/client-01.png",
+                      alt: "4"
+                    }
                   })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "client-item" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/client-01.png", alt: "5" }
+                    attrs: {
+                      src: "/frontend/assets/images/client-01.png",
+                      alt: "5"
+                    }
                   })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "client-item" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/client-01.png", alt: "6" }
+                    attrs: {
+                      src: "/frontend/assets/images/client-01.png",
+                      alt: "6"
+                    }
                   })
                 ])
               ])
@@ -40418,37 +40536,55 @@ var staticRenderFns = [
               _c("div", { staticClass: "owl-clients owl-carousel" }, [
                 _c("div", { staticClass: "client-item" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/client-01.png", alt: "1" }
+                    attrs: {
+                      src: "/frontend/assets/images/client-01.png",
+                      alt: "1"
+                    }
                   })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "client-item" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/client-01.png", alt: "2" }
+                    attrs: {
+                      src: "/frontend/assets/images/client-01.png",
+                      alt: "2"
+                    }
                   })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "client-item" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/client-01.png", alt: "3" }
+                    attrs: {
+                      src: "/frontend/assets/images/client-01.png",
+                      alt: "3"
+                    }
                   })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "client-item" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/client-01.png", alt: "4" }
+                    attrs: {
+                      src: "/frontend/assets/images/client-01.png",
+                      alt: "4"
+                    }
                   })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "client-item" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/client-01.png", alt: "5" }
+                    attrs: {
+                      src: "/frontend/assets/images/client-01.png",
+                      alt: "5"
+                    }
                   })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "client-item" }, [
                   _c("img", {
-                    attrs: { src: "assets/images/client-01.png", alt: "6" }
+                    attrs: {
+                      src: "/frontend/assets/images/client-01.png",
+                      alt: "6"
+                    }
                   })
                 ])
               ])
@@ -40481,6 +40617,493 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "latest-products" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c(
+              "div",
+              { staticClass: "section-heading" },
+              [
+                _c("h2", [_vm._v("Latest Products")]),
+                _vm._v(" "),
+                _c("router-link", { attrs: { to: "products" } }, [
+                  _vm._v("view all products\n              "),
+                  _c("i", { staticClass: "fa fa-angle-right" })
+                ])
+              ],
+              1
+            )
+          ]),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _vm._m(2),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _vm._m(4),
+          _vm._v(" "),
+          _vm._m(5),
+          _vm._v(" "),
+          _vm._m(6)
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _vm._m(7),
+    _vm._v(" "),
+    _vm._m(8)
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "banner header-text" }, [
+      _c("div", { staticClass: "owl-banner owl-carousel" }, [
+        _c("div", { staticClass: "banner-item-01" }, [
+          _c("div", { staticClass: "text-content" }, [
+            _c("h4", [_vm._v("Best Offer")]),
+            _vm._v(" "),
+            _c("h2", [_vm._v("New Arrivals On Sale")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "banner-item-02" }, [
+          _c("div", { staticClass: "text-content" }, [
+            _c("h4", [_vm._v("Flash Deals")]),
+            _vm._v(" "),
+            _c("h2", [_vm._v("Get your best products")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "banner-item-03" }, [
+          _c("div", { staticClass: "text-content" }, [
+            _c("h4", [_vm._v("Last Minute")]),
+            _vm._v(" "),
+            _c("h2", [_vm._v("Grab last minute deals")])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4" }, [
+      _c("div", { staticClass: "product-item" }, [
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "/frontend/assets/images/product_01.jpg", alt: "" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "down-content" }, [
+          _c("a", { attrs: { href: "#" } }, [
+            _c("h4", [_vm._v("Tittle goes here")])
+          ]),
+          _vm._v(" "),
+          _c("h6", [_vm._v("$25.75")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
+            )
+          ]),
+          _vm._v(" "),
+          _c("ul", { staticClass: "stars" }, [
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })])
+          ]),
+          _vm._v(" "),
+          _c("span", [_vm._v("Reviews (24)")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4" }, [
+      _c("div", { staticClass: "product-item" }, [
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "/frontend/assets/images/product_02.jpg", alt: "" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "down-content" }, [
+          _c("a", { attrs: { href: "#" } }, [
+            _c("h4", [_vm._v("Tittle goes here")])
+          ]),
+          _vm._v(" "),
+          _c("h6", [_vm._v("$30.25")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
+            )
+          ]),
+          _vm._v(" "),
+          _c("ul", { staticClass: "stars" }, [
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })])
+          ]),
+          _vm._v(" "),
+          _c("span", [_vm._v("Reviews (21)")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4" }, [
+      _c("div", { staticClass: "product-item" }, [
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "/frontend/assets/images/product_03.jpg", alt: "" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "down-content" }, [
+          _c("a", { attrs: { href: "#" } }, [
+            _c("h4", [_vm._v("Tittle goes here")])
+          ]),
+          _vm._v(" "),
+          _c("h6", [_vm._v("$20.45")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n                Sixteen Clothing is free CSS template provided by TemplateMo.\n              "
+            )
+          ]),
+          _vm._v(" "),
+          _c("ul", { staticClass: "stars" }, [
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })])
+          ]),
+          _vm._v(" "),
+          _c("span", [_vm._v("Reviews (36)")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4" }, [
+      _c("div", { staticClass: "product-item" }, [
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "/frontend/assets/images/product_04.jpg", alt: "" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "down-content" }, [
+          _c("a", { attrs: { href: "#" } }, [
+            _c("h4", [_vm._v("Tittle goes here")])
+          ]),
+          _vm._v(" "),
+          _c("h6", [_vm._v("$15.25")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
+            )
+          ]),
+          _vm._v(" "),
+          _c("ul", { staticClass: "stars" }, [
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })])
+          ]),
+          _vm._v(" "),
+          _c("span", [_vm._v("Reviews (48)")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4" }, [
+      _c("div", { staticClass: "product-item" }, [
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "/frontend/assets/images/product_05.jpg", alt: "" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "down-content" }, [
+          _c("a", { attrs: { href: "#" } }, [
+            _c("h4", [_vm._v("Tittle goes here")])
+          ]),
+          _vm._v(" "),
+          _c("h6", [_vm._v("$12.50")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
+            )
+          ]),
+          _vm._v(" "),
+          _c("ul", { staticClass: "stars" }, [
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })])
+          ]),
+          _vm._v(" "),
+          _c("span", [_vm._v("Reviews (16)")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4" }, [
+      _c("div", { staticClass: "product-item" }, [
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            attrs: { src: "/frontend/assets/images/product_06.jpg", alt: "" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "down-content" }, [
+          _c("a", { attrs: { href: "#" } }, [
+            _c("h4", [_vm._v("Tittle goes here")])
+          ]),
+          _vm._v(" "),
+          _c("h6", [_vm._v("$22.50")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
+            )
+          ]),
+          _vm._v(" "),
+          _c("ul", { staticClass: "stars" }, [
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })]),
+            _vm._v(" "),
+            _c("li", [_c("i", { staticClass: "fa fa-star" })])
+          ]),
+          _vm._v(" "),
+          _c("span", [_vm._v("Reviews (32)")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "best-features" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "section-heading" }, [
+              _c("h2", [_vm._v("About Sixteen Clothing")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6" }, [
+            _c("div", { staticClass: "left-content" }, [
+              _c("h4", [_vm._v("Looking for the best products?")]),
+              _vm._v(" "),
+              _c("p", [
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      rel: "nofollow",
+                      href: "https://templatemo.com/tm-546-sixteen-clothing",
+                      target: "_parent"
+                    }
+                  },
+                  [_vm._v("This template")]
+                ),
+                _vm._v(
+                  "\n              is free to use for your business websites. However, you have no\n              permission to redistribute the downloadable ZIP file on any\n              template collection website.\n              "
+                ),
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      rel: "nofollow",
+                      href: "https://templatemo.com/contact"
+                    }
+                  },
+                  [_vm._v("Contact us")]
+                ),
+                _vm._v("\n              for more info.\n            ")
+              ]),
+              _vm._v(" "),
+              _c("ul", { staticClass: "featured-list" }, [
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v("Lorem ipsum dolor sit amet")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v("Consectetur an adipisicing elit")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v("It aquecorporis nulla aspernatur")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v("Corporis, omnis doloremque")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _vm._v("Non cum id reprehenderit")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "filled-button", attrs: { href: "about.html" } },
+                [_vm._v("Read More")]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-6" }, [
+            _c("div", { staticClass: "right-image" }, [
+              _c("img", {
+                attrs: {
+                  src: "/frontend/assets/images/feature-image.jpg",
+                  alt: ""
+                }
+              })
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "call-to-action" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "inner-content" }, [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-8" }, [
+                  _c("h4", [
+                    _vm._v("Creative & Unique "),
+                    _c("em", [_vm._v("Sixteen")]),
+                    _vm._v(" Products")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v(
+                      "\n                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                  Itaque corporis amet elite author nulla.\n                "
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-4" }, [
+                  _c(
+                    "a",
+                    { staticClass: "filled-button", attrs: { href: "#" } },
+                    [_vm._v("Purchase Now")]
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/PageNotFound.vue?vue&type=template&id=35e6a422&":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/front/PageNotFound.vue?vue&type=template&id=35e6a422& ***!
+  \******************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
   return _vm._m(0)
 }
 var staticRenderFns = [
@@ -40489,401 +41112,19 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("div", { staticClass: "banner header-text" }, [
-        _c("div", { staticClass: "owl-banner owl-carousel" }, [
-          _c("div", { staticClass: "banner-item-01" }, [
-            _c("div", { staticClass: "text-content" }, [
-              _c("h4", [_vm._v("Best Offer")]),
-              _vm._v(" "),
-              _c("h2", [_vm._v("New Arrivals On Sale")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "banner-item-02" }, [
-            _c("div", { staticClass: "text-content" }, [
-              _c("h4", [_vm._v("Flash Deals")]),
-              _vm._v(" "),
-              _c("h2", [_vm._v("Get your best products")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "banner-item-03" }, [
-            _c("div", { staticClass: "text-content" }, [
-              _c("h4", [_vm._v("Last Minute")]),
-              _vm._v(" "),
-              _c("h2", [_vm._v("Grab last minute deals")])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "latest-products" }, [
+      _c("div", { staticClass: "page-heading about-heading header-text" }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-md-12" }, [
-              _c("div", { staticClass: "section-heading" }, [
-                _c("h2", [_vm._v("Latest Products")]),
+              _c("div", { staticClass: "text-content" }, [
+                _c("h2", [_vm._v("404 Error")]),
                 _vm._v(" "),
-                _c("a", { attrs: { href: "products.html" } }, [
-                  _vm._v("view all products "),
-                  _c("i", { staticClass: "fa fa-angle-right" })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "product-item" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: { src: "assets/images/product_01.jpg", alt: "" }
-                  })
-                ]),
+                _c("h4", [_vm._v("Sorry we couldn't find your page :(")]),
                 _vm._v(" "),
-                _c("div", { staticClass: "down-content" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("h4", [_vm._v("Tittle goes here")])
-                  ]),
-                  _vm._v(" "),
-                  _c("h6", [_vm._v("$25.75")]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "stars" }, [
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })])
-                  ]),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Reviews (24)")])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "product-item" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: { src: "assets/images/product_02.jpg", alt: "" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "down-content" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("h4", [_vm._v("Tittle goes here")])
-                  ]),
-                  _vm._v(" "),
-                  _c("h6", [_vm._v("$30.25")]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "stars" }, [
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })])
-                  ]),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Reviews (21)")])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "product-item" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: { src: "assets/images/product_03.jpg", alt: "" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "down-content" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("h4", [_vm._v("Tittle goes here")])
-                  ]),
-                  _vm._v(" "),
-                  _c("h6", [_vm._v("$20.45")]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n                Sixteen Clothing is free CSS template provided by TemplateMo.\n              "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "stars" }, [
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })])
-                  ]),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Reviews (36)")])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "product-item" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: { src: "assets/images/product_04.jpg", alt: "" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "down-content" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("h4", [_vm._v("Tittle goes here")])
-                  ]),
-                  _vm._v(" "),
-                  _c("h6", [_vm._v("$15.25")]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "stars" }, [
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })])
-                  ]),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Reviews (48)")])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "product-item" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: { src: "assets/images/product_05.jpg", alt: "" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "down-content" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("h4", [_vm._v("Tittle goes here")])
-                  ]),
-                  _vm._v(" "),
-                  _c("h6", [_vm._v("$12.50")]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "stars" }, [
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })])
-                  ]),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Reviews (16)")])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "product-item" }, [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: { src: "assets/images/product_06.jpg", alt: "" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "down-content" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("h4", [_vm._v("Tittle goes here")])
-                  ]),
-                  _vm._v(" "),
-                  _c("h6", [_vm._v("$22.50")]),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n                Lorem ipsume dolor sit amet, adipisicing elite. Itaque,\n                corporis nulla aspernatur.\n              "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "stars" }, [
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })]),
-                    _vm._v(" "),
-                    _c("li", [_c("i", { staticClass: "fa fa-star" })])
-                  ]),
-                  _vm._v(" "),
-                  _c("span", [_vm._v("Reviews (32)")])
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "best-features" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-12" }, [
-              _c("div", { staticClass: "section-heading" }, [
-                _c("h2", [_vm._v("About Sixteen Clothing")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-6" }, [
-              _c("div", { staticClass: "left-content" }, [
-                _c("h4", [_vm._v("Looking for the best products?")]),
-                _vm._v(" "),
-                _c("p", [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        rel: "nofollow",
-                        href: "https://templatemo.com/tm-546-sixteen-clothing",
-                        target: "_parent"
-                      }
-                    },
-                    [_vm._v("This template")]
-                  ),
+                _c("p", { staticClass: "text-warning mt-5" }, [
                   _vm._v(
-                    "\n              is free to use for your business websites. However, you have no\n              permission to redistribute the downloadable ZIP file on any\n              template collection website.\n              "
-                  ),
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        rel: "nofollow",
-                        href: "https://templatemo.com/contact"
-                      }
-                    },
-                    [_vm._v("Contact us")]
-                  ),
-                  _vm._v("\n              for more info.\n            ")
-                ]),
-                _vm._v(" "),
-                _c("ul", { staticClass: "featured-list" }, [
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("Lorem ipsum dolor sit amet")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("Consectetur an adipisicing elit")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("It aquecorporis nulla aspernatur")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("Corporis, omnis doloremque")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("Non cum id reprehenderit")
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "filled-button",
-                    attrs: { href: "about.html" }
-                  },
-                  [_vm._v("Read More")]
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-6" }, [
-              _c("div", { staticClass: "right-image" }, [
-                _c("img", {
-                  attrs: { src: "assets/images/feature-image.jpg", alt: "" }
-                })
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "call-to-action" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-12" }, [
-              _c("div", { staticClass: "inner-content" }, [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-8" }, [
-                    _c("h4", [
-                      _vm._v("Creative & Unique "),
-                      _c("em", [_vm._v("Sixteen")]),
-                      _vm._v(" Products")
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [
-                      _vm._v(
-                        "\n                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                  Itaque corporis amet elite author nulla.\n                "
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-4" }, [
-                    _c(
-                      "a",
-                      { staticClass: "filled-button", attrs: { href: "#" } },
-                      [_vm._v("Purchase Now")]
-                    )
-                  ])
+                    "\n              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus\n              corporis obcaecati aperiam est suscipit odio voluptatum.\n              Delectus accusantium, pariatur distinctio ratione explicabo\n              blanditiis nesciunt voluptatum aliquam eos fuga, omnis ipsam\n              error necessitatibus libero molestias provident expedita dicta\n              vitae recusandae quae repudiandae modi rerum. Iusto, illum\n              asperiores maiores similique officia inventore qui blanditiis\n              mollitia unde? Quaerat corrupti explicabo sunt fugiat sint, ea\n              omnis quibusdam delectus beatae est voluptatem consequatur. Ad\n              quae praesentium tempore alias fuga omnis aliquid laudantium\n              ipsa consectetur voluptatum deserunt debitis voluptate\n              reprehenderit maxime, veritatis ea, enim dolores inventore\n              architecto velit nemo impedit consequuntur. Vitae numquam totam\n              molestias placeat.\n            "
+                  )
                 ])
               ])
             ])
@@ -40972,7 +41213,7 @@ var staticRenderFns = [
                       _c("a", { attrs: { href: "#" } }, [
                         _c("img", {
                           attrs: {
-                            src: "assets/images/product_01.jpg",
+                            src: "/frontend/assets/images/product_01.jpg",
                             alt: ""
                           }
                         })
@@ -41013,7 +41254,7 @@ var staticRenderFns = [
                       _c("a", { attrs: { href: "#" } }, [
                         _c("img", {
                           attrs: {
-                            src: "assets/images/product_02.jpg",
+                            src: "/frontend/assets/images/product_02.jpg",
                             alt: ""
                           }
                         })
@@ -41054,7 +41295,7 @@ var staticRenderFns = [
                       _c("a", { attrs: { href: "#" } }, [
                         _c("img", {
                           attrs: {
-                            src: "assets/images/product_03.jpg",
+                            src: "/frontend/assets/images/product_03.jpg",
                             alt: ""
                           }
                         })
@@ -41095,7 +41336,7 @@ var staticRenderFns = [
                       _c("a", { attrs: { href: "#" } }, [
                         _c("img", {
                           attrs: {
-                            src: "assets/images/product_04.jpg",
+                            src: "/frontend/assets/images/product_04.jpg",
                             alt: ""
                           }
                         })
@@ -41136,7 +41377,7 @@ var staticRenderFns = [
                       _c("a", { attrs: { href: "#" } }, [
                         _c("img", {
                           attrs: {
-                            src: "assets/images/product_05.jpg",
+                            src: "/frontend/assets/images/product_05.jpg",
                             alt: ""
                           }
                         })
@@ -41177,7 +41418,7 @@ var staticRenderFns = [
                       _c("a", { attrs: { href: "#" } }, [
                         _c("img", {
                           attrs: {
-                            src: "assets/images/product_06.jpg",
+                            src: "/frontend/assets/images/product_06.jpg",
                             alt: ""
                           }
                         })

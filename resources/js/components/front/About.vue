@@ -24,7 +24,7 @@
           </div>
           <div class="col-md-6">
             <div class="right-image">
-              <img src="assets/images/feature-image.jpg" alt="" />
+              <img src="/frontend/assets/images/feature-image.jpg" alt="" />
             </div>
           </div>
           <div class="col-md-6">
@@ -72,7 +72,7 @@
           <div class="col-md-4">
             <div class="team-member">
               <div class="thumb-container">
-                <img src="assets/images/team_01.jpg" alt="" />
+                <img src="/frontend/assets/images/team_01.jpg" alt="" />
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
@@ -105,7 +105,7 @@
           <div class="col-md-4">
             <div class="team-member">
               <div class="thumb-container">
-                <img src="assets/images/team_02.jpg" alt="" />
+                <img src="/frontend/assets/images/team_02.jpg" alt="" />
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
@@ -138,7 +138,7 @@
           <div class="col-md-4">
             <div class="team-member">
               <div class="thumb-container">
-                <img src="assets/images/team_03.jpg" alt="" />
+                <img src="/frontend/assets/images/team_03.jpg" alt="" />
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
@@ -171,7 +171,7 @@
           <div class="col-md-4">
             <div class="team-member">
               <div class="thumb-container">
-                <img src="assets/images/team_04.jpg" alt="" />
+                <img src="/frontend/assets/images/team_04.jpg" alt="" />
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
@@ -204,7 +204,7 @@
           <div class="col-md-4">
             <div class="team-member">
               <div class="thumb-container">
-                <img src="assets/images/team_05.jpg" alt="" />
+                <img src="/frontend/assets/images/team_05.jpg" alt="" />
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
@@ -237,7 +237,7 @@
           <div class="col-md-4">
             <div class="team-member">
               <div class="thumb-container">
-                <img src="assets/images/team_06.jpg" alt="" />
+                <img src="/frontend/assets/images/team_06.jpg" alt="" />
                 <div class="hover-effect">
                   <div class="hover-content">
                     <ul class="social-icons">
@@ -334,27 +334,27 @@
           <div class="col-md-12">
             <div class="owl-clients owl-carousel">
               <div class="client-item">
-                <img src="assets/images/client-01.png" alt="1" />
+                <img src="/frontend/assets/images/client-01.png" alt="1" />
               </div>
 
               <div class="client-item">
-                <img src="assets/images/client-01.png" alt="2" />
+                <img src="/frontend/assets/images/client-01.png" alt="2" />
               </div>
 
               <div class="client-item">
-                <img src="assets/images/client-01.png" alt="3" />
+                <img src="/frontend/assets/images/client-01.png" alt="3" />
               </div>
 
               <div class="client-item">
-                <img src="assets/images/client-01.png" alt="4" />
+                <img src="/frontend/assets/images/client-01.png" alt="4" />
               </div>
 
               <div class="client-item">
-                <img src="assets/images/client-01.png" alt="5" />
+                <img src="/frontend/assets/images/client-01.png" alt="5" />
               </div>
 
               <div class="client-item">
-                <img src="assets/images/client-01.png" alt="6" />
+                <img src="/frontend/assets/images/client-01.png" alt="6" />
               </div>
             </div>
           </div>

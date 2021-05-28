@@ -31,7 +31,7 @@
                     </router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/home/profile" class="nav-link">
+                    <router-link to="/profile" class="nav-link">
                         <i class="nav-icon fas fa-user"></i>
                         <p>
                             Profile
@@ -39,7 +39,7 @@
                     </router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/home/password" class="nav-link">
+                    <router-link to="/password" class="nav-link">
                         <i class="nav-icon fas fa-user"></i>
                         <p>
                             Password

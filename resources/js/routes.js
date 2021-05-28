@@ -2,6 +2,7 @@ import HomePage from './components/front/HomePage';
 import Products from './components/front/Products';
 import About from './components/front/About';
 import ContactUs from './components/front/ContactUs';
+import PageNotFound from './components/front/PageNotFound.vue';
 
 import Dashboard from './components/backend/Dashboard';
 import Profile from './components/backend/Profile';
@@ -26,18 +27,24 @@ export const routes = [
         path: '/contact-us',
         component: ContactUs
     },
-    
+
     //Backend Routes
     {
         path: '/home',
         component: Dashboard
     }, 
     {
-        path: '/home/profile',
+        path: '/profile',
         component: Profile
     }, 
     {
-        path: '/home/password',
+        path: '/password',
         component: Password
+    },
+
+    //404 Error
+    {
+        path: '*',
+        component: PageNotFound
     }, 
 ]

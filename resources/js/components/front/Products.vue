@@ -33,7 +33,7 @@
                 <div class="col-lg-4 col-md-4 all des">
                   <div class="product-item">
                     <a href="#"
-                      ><img src="assets/images/product_01.jpg" alt=""
+                      ><img src="/frontend/assets/images/product_01.jpg" alt=""
                     /></a>
                     <div class="down-content">
                       <a href="#"><h4>Tittle goes here</h4></a>
@@ -56,7 +56,7 @@
                 <div class="col-lg-4 col-md-4 all dev">
                   <div class="product-item">
                     <a href="#"
-                      ><img src="assets/images/product_02.jpg" alt=""
+                      ><img src="/frontend/assets/images/product_02.jpg" alt=""
                     /></a>
                     <div class="down-content">
                       <a href="#"><h4>Tittle goes here</h4></a>
@@ -79,8 +79,11 @@
                 <div class="col-lg-4 col-md-4 all gra">
                   <div class="product-item">
                     <a href="#"
-                      ><img src="assets/images/product_03.jpg" alt=""
-                    /></a>
+                      ><img
+                        src="/frontend/assets/images/product_03.jpg"
+                        alt=""
+                      />
+                    </a>
                     <div class="down-content">
                       <a href="#"><h4>Tittle goes here</h4></a>
                       <h6>$32.50</h6>
@@ -102,7 +105,7 @@
                 <div class="col-lg-4 col-md-4 all gra">
                   <div class="product-item">
                     <a href="#"
-                      ><img src="assets/images/product_04.jpg" alt=""
+                      ><img src="/frontend/assets/images/product_04.jpg" alt=""
                     /></a>
                     <div class="down-content">
                       <a href="#"><h4>Tittle goes here</h4></a>
@@ -125,7 +128,7 @@
                 <div class="col-lg-4 col-md-4 all dev">
                   <div class="product-item">
                     <a href="#"
-                      ><img src="assets/images/product_05.jpg" alt=""
+                      ><img src="/frontend/assets/images/product_05.jpg" alt=""
                     /></a>
                     <div class="down-content">
                       <a href="#"><h4>Tittle goes here</h4></a>
@@ -148,7 +151,7 @@
                 <div class="col-lg-4 col-md-4 all des">
                   <div class="product-item">
                     <a href="#"
-                      ><img src="assets/images/product_06.jpg" alt=""
+                      ><img src="/frontend/assets/images/product_06.jpg" alt=""
                     /></a>
                     <div class="down-content">
                       <a href="#"><h4>Tittle goes here</h4></a>
@@ -187,7 +190,6 @@
     </div>
   </div>
 </template>
-
 
 <script>
 export default {
