@@ -1,3 +1,6 @@
+<!-- Main JS -->
+<script src="{{ asset('js/app.js') }}" defer></script>
+
 <!-- Bootstrap core JavaScript -->
 <script src="{{ asset('frontend') }}/assets/js/jquery.min.js"></script>
 <script src="{{ asset('frontend') }}/assets/js/bootstrap.bundle.min.js"></script>
@@ -19,6 +22,3 @@
           }
       }
 </script>
-
-<!-- Main JS -->
-<script src="{{ asset('js/app.js') }}" defer></script>

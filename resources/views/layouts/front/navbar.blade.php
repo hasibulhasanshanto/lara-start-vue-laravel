@@ -11,7 +11,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <router-link class="nav-link" to="/">
                             Home
                         </router-link>
