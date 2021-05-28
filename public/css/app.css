@@ -68531,3 +68531,7 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.nav-item .router-link-active {
+  background-color: #007bff !important;
+  color: #fff;
+}

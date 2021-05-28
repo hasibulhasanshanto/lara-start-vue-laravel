@@ -13,3 +13,9 @@ $fa-font-path: "../webfonts";
 @import '~bootstrap/scss/bootstrap';
 //admin lte
 @import '~admin-lte/dist/css/adminlte.css';
+
+
+.nav-item .router-link-active {
+    background-color: #007bff !important;
+    color: #fff;
+}

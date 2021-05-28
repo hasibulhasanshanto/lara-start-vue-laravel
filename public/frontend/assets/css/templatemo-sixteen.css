@@ -1116,3 +1116,9 @@ footer .inner-content p a {
         bottom: 0;
     }
 }
+
+.nav-item .router-link-exact-active {
+    color: #fff;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #f33f3f;
+}

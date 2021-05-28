@@ -79,7 +79,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('logout') }}" onclick="event.preventDefault();
-                        document.getElementById('logout-form-sidebar').submit();" class="nav-link">
+                        document.getElementById('logout-form-sidebar').submit();" class="nav-link text-danger">
                         <i class="nav-icon fas fa-power-off"></i>
                         <p>
                             Logout
