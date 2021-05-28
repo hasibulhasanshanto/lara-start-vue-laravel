@@ -2,9 +2,9 @@
 <header class="">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <router-link class="navbar-brand" to="/">
                 <h2>Sixteen <em>Clothing</em></h2>
-            </a>
+            </router-link>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,10 +22,14 @@
                         </router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <router-link class="nav-link" to="/about">
+                            About Us
+                        </router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
+                        <router-link class="nav-link" to="/contact-us">
+                            Contact Us
+                        </router-link>
                     </li>
                 </ul>
             </div>

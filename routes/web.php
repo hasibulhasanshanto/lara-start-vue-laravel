@@ -17,6 +17,8 @@ use App\Http\Controllers\FrontController;
 
 Route::get('/', [FrontController::class, 'front'])->name('front.home');
 Route::get('/products', [FrontController::class, 'front']);
+Route::get('/about', [FrontController::class, 'front']);
+Route::get('/contact-us', [FrontController::class, 'front']);
 
 Auth::routes();
 

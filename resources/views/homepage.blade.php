@@ -34,6 +34,7 @@
     </div>
     <!-- Scripts -->
     @include('layouts.front.script')
+
 </body>
 
 </html>

@@ -1,5 +1,7 @@
 import HomePage from './components/front/HomePage';
 import Products from './components/front/Products';
+import About from './components/front/About';
+import ContactUs from './components/front/ContactUs';
 
 import Dashboard from './components/backend/Dashboard';
 import Profile from './components/backend/Profile';
@@ -16,7 +18,16 @@ export const routes = [
         path: '/products',
         component: Products
     },
- 
+    {
+        path: '/about',
+        component: About
+    },
+    {
+        path: '/contact-us',
+        component: ContactUs
+    },
+    
+    //Backend Routes
     {
         path: '/home',
         component: Dashboard
