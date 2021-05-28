@@ -10,8 +10,7 @@
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item">
                                 <router-link to="/home">Home</router-link>
-                            </li>
-                            <li class="breadcrumb-item active">Dashboard</li>
+                            </li> 
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->

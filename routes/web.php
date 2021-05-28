@@ -20,6 +20,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/profile', [HomeController::class, 'index']);
-Route::get('/password', [HomeController::class, 'index']);
+Route::prefix('home')->middleware(['auth'])->group(function () {
+    Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/profile', [HomeController::class, 'index']);
+    Route::get('/password', [HomeController::class, 'index']);
+});

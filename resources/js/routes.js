@@ -1,6 +1,6 @@
-import Dashboard from './components/Dashboard';
-import Profile from './components/Profile';
-import Password from './components/Password';
+import Dashboard from './components/backend/Dashboard';
+import Profile from './components/backend/Profile';
+import Password from './components/backend/Password';
 
 
 export const routes = [
@@ -9,11 +9,11 @@ export const routes = [
         component: Dashboard
     }, 
     {
-        path: '/profile',
+        path: '/home/profile',
         component: Profile
     }, 
     {
-        path: '/password',
+        path: '/home/password',
         component: Password
     }, 
 ]
