@@ -7,6 +7,7 @@ import PageNotFound from './components/front/PageNotFound.vue';
 import Dashboard from './components/backend/Dashboard';
 import Profile from './components/backend/Profile';
 import Password from './components/backend/Password';
+import Users from './components/backend/Users';
 
 
 export const routes = [
@@ -40,6 +41,10 @@ export const routes = [
     {
         path: '/password',
         component: Password
+    },
+    {
+        path: '/users',
+        component: Users
     },
 
     //404 Error
