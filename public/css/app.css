@@ -68535,3 +68535,7 @@ h3 {
   background-color: #007bff !important;
   color: #fff;
 }
+
+.error {
+  color: red;
+}

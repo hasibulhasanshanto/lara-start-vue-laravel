@@ -54,82 +54,22 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>John Doe</td>
-                      <td>john@gmail.com</td>
+                    <tr v-for="(user, i) in users" :key="i">
+                      <td>{{ i + 1 }}</td>
+                      <td>{{ user.name }}</td>
+                      <td>{{ user.email }}</td>
                       <td>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Ipsa, recusandae.
+                        {{ user.bio }}
                       </td>
-                      <td>Admin</td>
-                      <td><span class="badge bg-success">Active</span></td>
+                      <td>{{ user.type | capitalize }}</td>
                       <td>
-                        <a href="" class="btn btn-primary btn-sm"
-                          ><i class="fas fa-edit"></i
-                        ></a>
-                        <a href="" class="btn btn-warning btn-sm"
-                          ><i class="fas fa-eye"></i
-                        ></a>
-                        <a href="" class="btn btn-danger btn-sm"
-                          ><i class="fas fa-trash-alt"></i
-                        ></a>
+                        <span class="badge bg-success" v-if="user.status == 1"
+                          >Active</span
+                        >
+                        <span class="badge bg-danger" v-if="user.status == 0"
+                          >Deactive</span
+                        >
                       </td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>John Doe</td>
-                      <td>john@gmail.com</td>
-                      <td>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Ipsa, recusandae.
-                      </td>
-                      <td>Admin</td>
-                      <td><span class="badge bg-success">Active</span></td>
-                      <td>
-                        <a href="" class="btn btn-primary btn-sm"
-                          ><i class="fas fa-edit"></i
-                        ></a>
-                        <a href="" class="btn btn-warning btn-sm"
-                          ><i class="fas fa-eye"></i
-                        ></a>
-                        <a href="" class="btn btn-danger btn-sm"
-                          ><i class="fas fa-trash-alt"></i
-                        ></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>John Doe</td>
-                      <td>john@gmail.com</td>
-                      <td>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Ipsa, recusandae.
-                      </td>
-                      <td>Admin</td>
-                      <td><span class="badge bg-success">Active</span></td>
-                      <td>
-                        <a href="" class="btn btn-primary btn-sm"
-                          ><i class="fas fa-edit"></i
-                        ></a>
-                        <a href="" class="btn btn-warning btn-sm"
-                          ><i class="fas fa-eye"></i
-                        ></a>
-                        <a href="" class="btn btn-danger btn-sm"
-                          ><i class="fas fa-trash-alt"></i
-                        ></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>John Doe</td>
-                      <td>john@gmail.com</td>
-                      <td>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Ipsa, recusandae.
-                      </td>
-                      <td>Admin</td>
-                      <td><span class="badge bg-success">Active</span></td>
                       <td>
                         <a href="" class="btn btn-primary btn-sm"
                           ><i class="fas fa-edit"></i
@@ -176,8 +116,12 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form @submit.prevent="login">
+          <form @submit.prevent="createUser" @keydown="form.onKeydown($event)">
             <div class="modal-body">
+              <AlertError
+                :form="form"
+                message="Please check all input fields an try again."
+              />
               <div class="form-group">
                 <input
                   class="form-control"
@@ -186,10 +130,7 @@
                   name="name"
                   placeholder="Name"
                 />
-                <div
-                  v-if="form.errors.has('name')"
-                  v-html="form.errors.get('name')"
-                />
+                <HasError :form="form" field="name" class="error" />
               </div>
               <div class="form-group">
                 <input
@@ -199,10 +140,7 @@
                   name="email"
                   placeholder="Email"
                 />
-                <div
-                  v-if="form.errors.has('email')"
-                  v-html="form.errors.get('email')"
-                />
+                <HasError :form="form" field="email" class="error" />
               </div>
 
               <div class="form-group">
@@ -213,10 +151,7 @@
                   v-model="form.bio"
                   placeholder="User Bio.."
                 ></textarea>
-                <div
-                  v-if="form.errors.has('bio')"
-                  v-html="form.errors.get('bio')"
-                />
+                <HasError :form="form" field="bio" class="error" />
               </div>
 
               <div class="form-group">
@@ -226,10 +161,7 @@
                   <option value="author">Author</option>
                   <option value="editor">Editor</option>
                 </select>
-                <div
-                  v-if="form.errors.has('type')"
-                  v-html="form.errors.get('type')"
-                />
+                <HasError :form="form" field="type" class="error" />
               </div>
 
               <div class="form-group">
@@ -240,10 +172,7 @@
                   name="password"
                   placeholder="Password"
                 />
-                <div
-                  v-if="form.errors.has('password')"
-                  v-html="form.errors.get('password')"
-                />
+                <HasError :form="form" field="password" class="error" />
               </div>
               <div class="custom-control custom-switch">
                 <input
@@ -279,21 +208,29 @@
 <script>
 export default {
   data: () => ({
+    users: {},
+
     form: new Form({
       name: "",
       email: "",
       bio: "",
       type: "",
       password: "",
-      status: "",
+      status: false,
     }),
   }),
 
   methods: {
-    async login() {
-      const response = await this.form.post("/api/login");
+    allUser() {
+      axios.get("/api/user").then(({ data }) => (this.users = data.data));
+    },
+    async createUser() {
+      const response = await this.form.post("/api/user");
       // ...
     },
+  },
+  created() {
+    this.allUser();
   },
 };
 </script>
