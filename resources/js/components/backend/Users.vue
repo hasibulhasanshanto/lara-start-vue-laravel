@@ -245,6 +245,17 @@
                   v-html="form.errors.get('password')"
                 />
               </div>
+              <div class="custom-control custom-switch">
+                <input
+                  v-model="form.status"
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="customSwitch"
+                />
+                <label class="custom-control-label" for="customSwitch"
+                  >Status</label
+                >
+              </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-dismiss="modal">
@@ -274,6 +285,7 @@ export default {
       bio: "",
       type: "",
       password: "",
+      status: "",
     }),
   }),
 

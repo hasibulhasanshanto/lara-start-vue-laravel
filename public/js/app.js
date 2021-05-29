@@ -2335,6 +2335,17 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -2343,7 +2354,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         email: "",
         bio: "",
         type: "",
-        password: ""
+        password: "",
+        status: ""
       })
     };
   },
@@ -41101,6 +41113,59 @@ var render = function() {
                           }
                         })
                       : _vm._e()
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "custom-control custom-switch" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.form.status,
+                          expression: "form.status"
+                        }
+                      ],
+                      staticClass: "custom-control-input",
+                      attrs: { type: "checkbox", id: "customSwitch" },
+                      domProps: {
+                        checked: Array.isArray(_vm.form.status)
+                          ? _vm._i(_vm.form.status, null) > -1
+                          : _vm.form.status
+                      },
+                      on: {
+                        change: function($event) {
+                          var $$a = _vm.form.status,
+                            $$el = $event.target,
+                            $$c = $$el.checked ? true : false
+                          if (Array.isArray($$a)) {
+                            var $$v = null,
+                              $$i = _vm._i($$a, $$v)
+                            if ($$el.checked) {
+                              $$i < 0 &&
+                                _vm.$set(_vm.form, "status", $$a.concat([$$v]))
+                            } else {
+                              $$i > -1 &&
+                                _vm.$set(
+                                  _vm.form,
+                                  "status",
+                                  $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                                )
+                            }
+                          } else {
+                            _vm.$set(_vm.form, "status", $$c)
+                          }
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "label",
+                      {
+                        staticClass: "custom-control-label",
+                        attrs: { for: "customSwitch" }
+                      },
+                      [_vm._v("Status")]
+                    )
                   ])
                 ]),
                 _vm._v(" "),
