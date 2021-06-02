@@ -28,7 +28,8 @@
         <!-- Page Content -->
 
         <router-view></router-view>
-
+        <!-- set progressbar -->
+        <vue-progress-bar></vue-progress-bar>
 
         @include('layouts.front.footer')
     </div>

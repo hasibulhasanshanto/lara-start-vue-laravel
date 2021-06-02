@@ -49,6 +49,7 @@
                       <th>Email</th>
                       <th>Bio</th>
                       <th>Type</th>
+                      <th>Registered At</th>
                       <th>Status</th>
                       <th width="15%">Action</th>
                     </tr>
@@ -62,6 +63,7 @@
                         {{ user.bio }}
                       </td>
                       <td>{{ user.type | capitalize }}</td>
+                      <td>{{ user.created_at | formatDate }}</td>
                       <td>
                         <span class="badge bg-success" v-if="user.status == 1"
                           >Active</span
@@ -222,15 +224,21 @@ export default {
 
   methods: {
     allUser() {
+      this.$Progress.start();
       axios.get("/api/user").then(({ data }) => (this.users = data.data));
+      this.$Progress.finish();
     },
     async createUser() {
+      this.$Progress.start();
       const response = await this.form.post("/api/user");
       // ...
     },
   },
   created() {
     this.allUser();
+  },
+  mounted() {
+    this.$Progress.finish();
   },
 };
 </script>
