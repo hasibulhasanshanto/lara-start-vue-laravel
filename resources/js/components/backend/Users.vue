@@ -79,7 +79,9 @@
                         <a href="" class="btn btn-warning btn-sm"
                           ><i class="fas fa-eye"></i
                         ></a>
-                        <a href="" class="btn btn-danger btn-sm"
+                        <a
+                          class="btn btn-danger btn-sm"
+                          @click="deleteUser(user.id)"
                           ><i class="fas fa-trash-alt"></i
                         ></a>
                       </td>
@@ -230,15 +232,63 @@ export default {
     },
     async createUser() {
       this.$Progress.start();
-      const response = await this.form.post("/api/user");
-      // ...
+      const response = await this.form
+        .post("/api/user")
+        .then(() => {
+          this.form.reset();
+          Fire.$emit("reloadUser");
+          $("#addNew").modal("hide");
+          Toast.fire({
+            icon: "success",
+            title: "User created successfully",
+          });
+          this.$Progress.finish();
+        })
+        .catch(() => {
+          //
+        });
+    },
+    deleteUser(id) {
+      Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          this.$Progress.start();
+          this.form
+            .delete("/api/user/" + id)
+            .then((res) => {
+              let msg = res.data[1];
+              Swal.fire("Deleted!", msg, "success");
+              this.$Progress.finish();
+              Fire.$emit("reloadUser");
+            })
+            .catch(() => {
+              Swal.fire("Error!", "User deleted Failed.", "error");
+              this.$Progress.fail();
+            });
+        }
+      });
     },
   },
+  // Methods end here
+
   created() {
     this.allUser();
+    Fire.$on("reloadUser", () => {
+      this.allUser();
+    });
   },
   mounted() {
     console.log("Component mounted.");
+  },
+  onUpdate() {
+    this.allUser();
   },
 };
 </script>

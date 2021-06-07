@@ -8,6 +8,7 @@ import { routes } from './routes';
 import VueRouter from 'vue-router';
 import moment from 'moment'; 
 import VueProgressBar from 'vue-progressbar';
+import Swal from 'sweetalert2';
 
 Vue.use(VueProgressBar, {
     color: 'rgb(143, 255, 199)',
@@ -18,12 +19,28 @@ Vue.use(VueProgressBar, {
 
 Vue.use(VueRouter);
 window.Form = Form;   
+window.Swal = Swal;   
 Vue.component(HasError.name, HasError)
 Vue.component(AlertError.name, AlertError)
 
+let Fire = new Vue;
+window.Fire = Fire;
+
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+});
+
+window.Toast = Toast;   
 
 Vue.component('master-component', require('./components/Master.vue').default);
-
 
 Vue.filter('capitalize', function (text) {
     if (!text) return ''
