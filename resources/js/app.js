@@ -9,24 +9,15 @@ import VueRouter from 'vue-router';
 import moment from 'moment'; 
 import VueProgressBar from 'vue-progressbar';
 
-const options = {
-    color: '#bffaf3',
-    failedColor: '#874b4b',
-    thickness: '5px',
-    transition: {
-        speed: '0.2s',
-        opacity: '0.6s',
-        termination: 300
-    },
-    autoRevert: true,
-    location: 'left',
-    inverse: false
-}
+Vue.use(VueProgressBar, {
+    color: 'rgb(143, 255, 199)',
+    failedColor: 'red',
+    height: '2px'
+})
   
 
 Vue.use(VueRouter);
-window.Form = Form;  
-Vue.use(VueProgressBar, options)
+window.Form = Form;   
 Vue.component(HasError.name, HasError)
 Vue.component(AlertError.name, AlertError)
 

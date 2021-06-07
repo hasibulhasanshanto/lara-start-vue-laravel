@@ -238,7 +238,7 @@ export default {
     this.allUser();
   },
   mounted() {
-    this.$Progress.finish();
+    console.log("Component mounted.");
   },
 };
 </script>

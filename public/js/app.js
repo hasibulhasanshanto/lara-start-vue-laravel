@@ -1915,9 +1915,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
-    console.log('Component mounted.');
+    this.$Progress.start();
+    this.$Progress.finish();
   }
 });
 
@@ -1978,9 +1984,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
-    console.log('Component mounted.');
+    this.$Progress.start();
+    console.log("Component mounted.");
+    this.$Progress.finish();
   }
 });
 
@@ -2041,9 +2054,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
-    console.log('Component mounted.');
+    this.$Progress.start();
+    console.log("Component mounted.");
+    this.$Progress.finish();
   }
 });
 
@@ -2332,7 +2352,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     this.allUser();
   },
   mounted: function mounted() {
-    this.$Progress.finish();
+    console.log("Component mounted.");
   }
 });
 
@@ -3503,22 +3523,13 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
-var options = {
-  color: '#bffaf3',
-  failedColor: '#874b4b',
-  thickness: '5px',
-  transition: {
-    speed: '0.2s',
-    opacity: '0.6s',
-    termination: 300
-  },
-  autoRevert: true,
-  location: 'left',
-  inverse: false
-};
+vue__WEBPACK_IMPORTED_MODULE_5__.default.use((vue_progressbar__WEBPACK_IMPORTED_MODULE_4___default()), {
+  color: 'rgb(143, 255, 199)',
+  failedColor: 'red',
+  height: '2px'
+});
 vue__WEBPACK_IMPORTED_MODULE_5__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_6__.default);
 window.Form = vform__WEBPACK_IMPORTED_MODULE_1__.default;
-vue__WEBPACK_IMPORTED_MODULE_5__.default.use((vue_progressbar__WEBPACK_IMPORTED_MODULE_4___default()), options);
 vue__WEBPACK_IMPORTED_MODULE_5__.default.component(vform_src_components_bootstrap4__WEBPACK_IMPORTED_MODULE_0__.HasError.name, vform_src_components_bootstrap4__WEBPACK_IMPORTED_MODULE_0__.HasError);
 vue__WEBPACK_IMPORTED_MODULE_5__.default.component(vform_src_components_bootstrap4__WEBPACK_IMPORTED_MODULE_0__.AlertError.name, vform_src_components_bootstrap4__WEBPACK_IMPORTED_MODULE_0__.AlertError);
 vue__WEBPACK_IMPORTED_MODULE_5__.default.component('master-component', __webpack_require__(/*! ./components/Master.vue */ "./resources/js/components/Master.vue").default);
@@ -63011,7 +63022,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("p", { staticClass: "card-text" }, [
                   _vm._v(
-                    "\n                                Some quick example text to build on the card title and make up the bulk of the card's\n                                content.\n                            "
+                    "\n                Some quick example text to build on the card title and make up\n                the bulk of the card's content.\n              "
                   )
                 ]),
                 _vm._v(" "),
@@ -63108,7 +63119,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("p", { staticClass: "card-text" }, [
                   _vm._v(
-                    "\n                                Some quick example text to build on the card title and make up the bulk of the card's\n                                content.\n                            "
+                    "\n                Some quick example text to build on the card title and make up\n                the bulk of the card's content.\n              "
                   )
                 ]),
                 _vm._v(" "),
@@ -63205,7 +63216,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("p", { staticClass: "card-text" }, [
                   _vm._v(
-                    "\n                                Some quick example text to build on the card title and make up the bulk of the card's\n                                content.\n                            "
+                    "\n                Some quick example text to build on the card title and make up\n                the bulk of the card's content.\n              "
                   )
                 ]),
                 _vm._v(" "),
