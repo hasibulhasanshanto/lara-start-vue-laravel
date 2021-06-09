@@ -2299,11 +2299,23 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
+      editMode: false,
       users: {},
       form: new Form({
+        id: "",
         name: "",
         email: "",
         bio: "",
@@ -2347,7 +2359,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                   });
 
                   _this2.$Progress.finish();
-                })["catch"](function () {//
+                })["catch"](function () {
+                  _this2.$Progress.fail();
                 });
 
               case 3:
@@ -2361,8 +2374,40 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }, _callee);
       }))();
     },
-    deleteUser: function deleteUser(id) {
+    addNew: function addNew() {
+      this.form.reset();
+      this.form.clear();
+      this.editMode = false;
+      $("#addNew").modal("show");
+    },
+    editUser: function editUser(user) {
+      this.form.reset();
+      this.form.clear();
+      this.editMode = true;
+      $("#addNew").modal("show");
+      this.form.fill(user);
+    },
+    updateUser: function updateUser() {
       var _this3 = this;
+
+      this.$Progress.start();
+      this.form.put("/api/user/" + this.form.id).then(function (res) {
+        _this3.form.reset();
+
+        Fire.$emit("reloadUser");
+        $("#addNew").modal("hide");
+        Toast.fire({
+          icon: "success",
+          title: res.data.success
+        });
+
+        _this3.$Progress.finish();
+      })["catch"](function () {
+        _this3.$Progress.fail();
+      });
+    },
+    deleteUser: function deleteUser(id) {
+      var _this4 = this;
 
       Swal.fire({
         title: "Are you sure?",
@@ -2374,19 +2419,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         confirmButtonText: "Yes, delete it!"
       }).then(function (result) {
         if (result.isConfirmed) {
-          _this3.$Progress.start();
+          _this4.$Progress.start();
 
-          _this3.form["delete"]("/api/user/" + id).then(function (res) {
+          _this4.form["delete"]("/api/user/" + id).then(function (res) {
             var msg = res.data[1];
             Swal.fire("Deleted!", msg, "success");
 
-            _this3.$Progress.finish();
+            _this4.$Progress.finish();
 
             Fire.$emit("reloadUser");
           })["catch"](function () {
             Swal.fire("Error!", "User deleted Failed.", "error");
 
-            _this3.$Progress.fail();
+            _this4.$Progress.fail();
           });
         }
       });
@@ -2394,19 +2439,19 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   // Methods end here
   created: function created() {
-    var _this4 = this;
+    var _this5 = this;
 
     this.allUser();
     Fire.$on("reloadUser", function () {
-      _this4.allUser();
+      _this5.allUser();
     });
   },
   mounted: function mounted() {
     console.log("Component mounted.");
-  },
-  onUpdate: function onUpdate() {
-    this.allUser();
-  }
+  } // onUpdate() {
+  //   this.allUser();
+  // },
+
 });
 
 /***/ }),
@@ -67008,11 +67053,27 @@ var render = function() {
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-12" }, [
             _c("div", { staticClass: "card" }, [
-              _vm._m(1),
+              _c("div", { staticClass: "card-header" }, [
+                _c("h3", { staticClass: "card-title" }, [_vm._v("All Users")]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-tools" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-success",
+                      on: { click: _vm.addNew }
+                    },
+                    [
+                      _c("i", { staticClass: "fas fa-plus mr-2" }),
+                      _vm._v("Add New\n                ")
+                    ]
+                  )
+                ])
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "card-body table-responsive p-0" }, [
                 _c("table", { staticClass: "table table-hover" }, [
-                  _vm._m(2),
+                  _vm._m(1),
                   _vm._v(" "),
                   _c(
                     "tbody",
@@ -67055,14 +67116,25 @@ var render = function() {
                         ]),
                         _vm._v(" "),
                         _c("td", [
-                          _vm._m(3, true),
-                          _vm._v(" "),
-                          _vm._m(4, true),
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary btn-sm",
+                              attrs: { type: "button" },
+                              on: {
+                                click: function($event) {
+                                  return _vm.editUser(user)
+                                }
+                              }
+                            },
+                            [_c("i", { staticClass: "fas fa-edit" })]
+                          ),
                           _vm._v(" "),
                           _c(
-                            "a",
+                            "button",
                             {
                               staticClass: "btn btn-danger btn-sm",
+                              attrs: { type: "button" },
                               on: {
                                 click: function($event) {
                                   return _vm.deleteUser(user.id)
@@ -67098,7 +67170,41 @@ var render = function() {
       [
         _c("div", { staticClass: "modal-dialog" }, [
           _c("div", { staticClass: "modal-content" }, [
-            _vm._m(5),
+            _c("div", { staticClass: "modal-header" }, [
+              _c(
+                "h5",
+                {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value: !_vm.editMode,
+                      expression: "!editMode"
+                    }
+                  ],
+                  staticClass: "modal-title"
+                },
+                [_vm._v("Add New User")]
+              ),
+              _vm._v(" "),
+              _c(
+                "h5",
+                {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value: _vm.editMode,
+                      expression: "editMode"
+                    }
+                  ],
+                  staticClass: "modal-title"
+                },
+                [_vm._v("Update User")]
+              ),
+              _vm._v(" "),
+              _vm._m(2)
+            ]),
             _vm._v(" "),
             _c(
               "form",
@@ -67106,10 +67212,7 @@ var render = function() {
                 on: {
                   submit: function($event) {
                     $event.preventDefault()
-                    return _vm.createUser($event)
-                  },
-                  keydown: function($event) {
-                    return _vm.form.onKeydown($event)
+                    _vm.editMode ? _vm.updateUser() : _vm.createUser()
                   }
                 }
               },
@@ -67420,10 +67523,35 @@ var render = function() {
                   _c(
                     "button",
                     {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: !_vm.editMode,
+                          expression: "!editMode"
+                        }
+                      ],
                       staticClass: "btn btn-primary",
                       attrs: { type: "submit", disabled: _vm.form.busy }
                     },
                     [_vm._v("\n              Create\n            ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: _vm.editMode,
+                          expression: "editMode"
+                        }
+                      ],
+                      staticClass: "btn btn-primary",
+                      attrs: { type: "submit", disabled: _vm.form.busy }
+                    },
+                    [_vm._v("\n              Update\n            ")]
                   )
                 ])
               ]
@@ -67441,28 +67569,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-sm-6" }, [
       _c("h1", { staticClass: "m-0 text-dark" }, [_vm._v("Users")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h3", { staticClass: "card-title" }, [_vm._v("All Users")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-tools" }, [
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-success",
-            attrs: { "data-toggle": "modal", "data-target": "#addNew" }
-          },
-          [
-            _c("i", { staticClass: "fas fa-plus mr-2" }),
-            _vm._v("Add New\n                ")
-          ]
-        )
-      ])
     ])
   },
   function() {
@@ -67494,43 +67600,17 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
-      "a",
-      { staticClass: "btn btn-primary btn-sm", attrs: { href: "" } },
-      [_c("i", { staticClass: "fas fa-edit" })]
+      "button",
+      {
+        staticClass: "close",
+        attrs: {
+          type: "button",
+          "data-dismiss": "modal",
+          "aria-label": "Close"
+        }
+      },
+      [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      { staticClass: "btn btn-warning btn-sm", attrs: { href: "" } },
-      [_c("i", { staticClass: "fas fa-eye" })]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-header" }, [
-      _c("h5", { staticClass: "modal-title", attrs: { id: "addNewLabel" } }, [
-        _vm._v("Add New User")
-      ]),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "close",
-          attrs: {
-            type: "button",
-            "data-dismiss": "modal",
-            "aria-label": "Close"
-          }
-        },
-        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
-      )
-    ])
   }
 ]
 render._withStripped = true

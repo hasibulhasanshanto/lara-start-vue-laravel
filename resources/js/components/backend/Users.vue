@@ -30,11 +30,7 @@
                 <h3 class="card-title">All Users</h3>
 
                 <div class="card-tools">
-                  <button
-                    class="btn btn-success"
-                    data-toggle="modal"
-                    data-target="#addNew"
-                  >
+                  <button class="btn btn-success" @click="addNew">
                     <i class="fas fa-plus mr-2"></i>Add New
                   </button>
                 </div>
@@ -73,17 +69,21 @@
                         >
                       </td>
                       <td>
-                        <a href="" class="btn btn-primary btn-sm"
-                          ><i class="fas fa-edit"></i
-                        ></a>
-                        <a href="" class="btn btn-warning btn-sm"
-                          ><i class="fas fa-eye"></i
-                        ></a>
-                        <a
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-sm"
+                          @click="editUser(user)"
+                        >
+                          <i class="fas fa-edit"></i>
+                        </button>
+
+                        <button
+                          type="button"
                           class="btn btn-danger btn-sm"
                           @click="deleteUser(user.id)"
-                          ><i class="fas fa-trash-alt"></i
-                        ></a>
+                        >
+                          <i class="fas fa-trash-alt"></i>
+                        </button>
                       </td>
                     </tr>
                   </tbody>
@@ -110,7 +110,8 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="addNewLabel">Add New User</h5>
+            <h5 class="modal-title" v-show="!editMode">Add New User</h5>
+            <h5 class="modal-title" v-show="editMode">Update User</h5>
             <button
               type="button"
               class="close"
@@ -120,7 +121,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form @submit.prevent="createUser" @keydown="form.onKeydown($event)">
+          <form @submit.prevent="editMode ? updateUser() : createUser()">
             <div class="modal-body">
               <AlertError
                 :form="form"
@@ -195,11 +196,20 @@
                 Close
               </button>
               <button
+                v-show="!editMode"
                 type="submit"
                 class="btn btn-primary"
                 :disabled="form.busy"
               >
                 Create
+              </button>
+              <button
+                v-show="editMode"
+                type="submit"
+                class="btn btn-primary"
+                :disabled="form.busy"
+              >
+                Update
               </button>
             </div>
           </form>
@@ -212,9 +222,11 @@
 <script>
 export default {
   data: () => ({
+    editMode: false,
     users: {},
 
     form: new Form({
+      id: "",
       name: "",
       email: "",
       bio: "",
@@ -245,7 +257,38 @@ export default {
           this.$Progress.finish();
         })
         .catch(() => {
-          //
+          this.$Progress.fail();
+        });
+    },
+    addNew() {
+      this.form.reset();
+      this.form.clear();
+      this.editMode = false;
+      $("#addNew").modal("show");
+    },
+    editUser(user) {
+      this.form.reset();
+      this.form.clear();
+      this.editMode = true;
+      $("#addNew").modal("show");
+      this.form.fill(user);
+    },
+    updateUser() {
+      this.$Progress.start();
+      this.form
+        .put("/api/user/" + this.form.id)
+        .then((res) => {
+          this.form.reset();
+          Fire.$emit("reloadUser");
+          $("#addNew").modal("hide");
+          Toast.fire({
+            icon: "success",
+            title: res.data.success,
+          });
+          this.$Progress.finish();
+        })
+        .catch(() => {
+          this.$Progress.fail();
         });
     },
     deleteUser(id) {
@@ -287,8 +330,8 @@ export default {
   mounted() {
     console.log("Component mounted.");
   },
-  onUpdate() {
-    this.allUser();
-  },
+  // onUpdate() {
+  //   this.allUser();
+  // },
 };
 </script>
